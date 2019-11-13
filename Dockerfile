@@ -2,7 +2,7 @@
 FROM conda/miniconda3-centos7
 MAINTAINER  yangyi@tib.cas.cn
 RUN conda install jupyter
-RUN pip install cameo
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple cameo
 RUN mkdir /home/CSMOs/
 COPY iJO1366.xml /home/CSMOs
 COPY algorithm.ipynb /home/CSMOs
